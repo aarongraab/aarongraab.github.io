@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Graab - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AARON GRAAB</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="interests.html">Interests</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="projects-container">
+        <h1>My Projects</h1>
+        <div class="project-grid">
+
+            <div class="project-card">
+                <div class="project-images">
+                    <div class="image-slider">
+                        <img src="photos/alien1.jpg" alt="Project 1 Screenshot 1" class="slider-image alien">
+                        <img src="photos/alien2.jpg" alt="Project 1 Screenshot 2" class="slider-image alien">
+                        <img src="photos/alien3.jpg" alt="Project 1 Screenshot 3" class="slider-image alien">
+                        <img src="photos/alien4.jpg" alt="Project 1 Screenshot 3" class="slider-image alien">
+                        <img src="photos/alien5.jpg" alt="Project 1 Screenshot 3" class="slider-image alien">
+                    </div>
+                    <button class="slider-btn prev-btn" aria-label="Previous image">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn next-btn" aria-label="Next image">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="slider-dots"></div>
+                </div>
+                <h3>Alien Protocol</h3>
+                <p>
+                    Built a 2D game in C++ using SFML and ImGui, creating a custom engine with features like collisions, ray casting, gravity, and NPC pathfinding. 
+                    The game includes weapons, items, inventory and shop mechanics, dynamic progression, shaders, and a fully built level editor. 
+                    Integrated visuals animations, shaders, audio, and parallax to enhance the experience.
+                </p>
+                <a href="https://youtu.be/Z_PaIThd8Bs" class="btn">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-images">
+                    <div class="image-slider">
+                        <img src="photos/login.jpg" alt="Project 1 Screenshot 3" class="slider-image zoom-out">
+                        <img src="photos/profile.jpg" alt="Project 1 Screenshot 1" class="slider-image">
+                        <img src="photos/buy.jpg" alt="Project 1 Screenshot 2" class="slider-image zoom-out">
+                    </div>
+                    <button class="slider-btn prev-btn" aria-label="Previous image">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn next-btn" aria-label="Next image">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="slider-dots"></div>
+                </div>
+                <h3>Stock Market Simulation</h3>
+                <p>
+                    Web-based stock trading simulation featuring server-side functionality and a dynamic browser-based HTML frontend. 
+                    Utilizes an external API to retrieve real-time stock information for executing trades.
+                </p>
+                <a href="https://github.com/aarongraab/Stock-Market-Game" class="btn">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-images">
+                    <div class="image-slider">
+                        <img src="photos/ml1.jpg" alt="Project 1 Screenshot 1" class="slider-image ml">
+                        <img src="photos/ml2.jpg" alt="Project 1 Screenshot 2" class="slider-image ml">
+                        <img src="photos/ml3.jpg" alt="Project 1 Screenshot 3" class="slider-image ml">
+                        <img src="photos/ml4.jpg" alt="Project 1 Screenshot 1" class="slider-image ml">
+                    </div>
+                    <button class="slider-btn prev-btn" aria-label="Previous image">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn next-btn" aria-label="Next image">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="slider-dots"></div>
+                </div>
+                <h3>Machine Learning Projects</h3>
+                <p>
+                    Machine learning projects involving classification, regression, and image recognition. 
+                    These included using KNN and cross-validation for label discrimination, developing regression models with scikit-learn, and optimizing binary classifiers with grid search. 
+                    Completed a TensorFlow image classification project with the Fashion MNIST dataset, modifying code and presenting results.
+                </p>
+                <a href="https://github.com/aarongraab/Machine-Learning-Projects" class="btn">View Project</a>
+            </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aaron Graab. All rights reserved.</p>
+    </footer>
+    <script type="module">
+        import Main from './main.js';
+        Main();
+    </script>
+</body>
+</html>
+

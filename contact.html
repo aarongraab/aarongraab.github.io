@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaron Graab - Contact</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
@@ -41,7 +42,7 @@
                         <a href="https://github.com/aarongraab" class="social-icon"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
-                <form class="contact-form" action="https://formspree.io/f/xyzznqgz" method="POST">
+                <form id="contactForm" class="contact-form">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <input type="text" name="subject" placeholder="Subject" required>
@@ -53,7 +54,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Aaron Graab. All rights reserved.</p>
+        <p>&copy; 2024 Aaron Graab. All rights reserved.</p>
     </footer>
     <script type="module">
         import Main from './main.js';

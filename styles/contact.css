@@ -1,0 +1,73 @@
+/* Contact Page Specific Styles */
+.contact-container {
+    max-width: 1200px;
+    margin: 80px auto 40px;
+    padding: 20px;
+}
+
+.contact-container h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+/* Contact Info Section */
+.contact-info, 
+.contact-form {
+    flex: 1;
+}
+
+.contact-info h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+.contact-list i {
+    color: var(--secondary-color);
+    margin-right: 10px;
+}
+
+/* Contact Form */
+.contact-form input,
+.contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+/* Responsive Design for Contact Page */
+@media screen and (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+    width: 95%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    }
+}

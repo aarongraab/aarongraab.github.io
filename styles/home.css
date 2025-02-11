@@ -1,0 +1,523 @@
+/* Main Content Container */
+.content-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-container,
+.lower-section-wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-text {
+    flex-grow: 1;
+}
+
+.content-text h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+}
+
+/* Lower Section Layout */
+.lower-section-wrapper {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 0;
+}
+
+/* Right Side Containers */
+.right-side-containers {
+    width: 350px;  /* Fixed width */
+    flex: 0 0 350px;  /* Don't grow or shrink */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    box-sizing: border-box;
+}
+
+/* Common Container Styles */
+.education-brief-container,
+.languages-container,
+.coding-music-container,
+.skills-container {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Container Headers */
+.education-brief-container h2,
+.languages-container h2,
+.coding-music-container h2,
+.skills-container h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: -10px;
+    padding-top: 0;
+}
+
+/* Education Items */
+.education-item {
+    margin-bottom: 15px;
+}
+
+.education-item:last-child {
+    margin-bottom: 0;
+}
+
+.education-item h3 {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.education-item p {
+    color: var(--text-color);
+    margin: 0;
+}
+
+.education-item .year {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
+
+/* Languages Section */
+.languages-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.languages-container li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    padding-left: 0;
+}
+
+.languages-container li span.language {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.languages-container li span.proficiency {
+    color: var(--secondary-color);
+    font-style: italic;
+    margin-left: 8px;
+}
+
+/* Coding Music Section */
+.music-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.music-links li {
+    margin-bottom: 12px;
+}
+
+.music-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+}
+
+.music-links a:hover {
+    color: var(--secondary-color);
+}
+
+.music-links i {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+/* Timeline Section */
+.timeline-container {
+    flex: 1;  /* Allow it to grow but maintain proportions */
+    min-width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.timeline-container h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin: 0 0 40px 0;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: var(--secondary-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    padding: 0px;
+    position: relative;
+    background-color: inherit;
+    width: calc(50% - 30px);
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+    will-change: opacity, transform;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    margin-right: 30px;
+}
+
+.timeline-item:nth-child(even) {
+    left: calc(50% + 30px);
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.timeline-content:hover {
+    transform: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content.expanded {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-dot {
+    width: 16px;
+    height: 16px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.timeline-item:nth-child(odd) .timeline-dot {
+    right: -38px;
+}
+
+.timeline-item:nth-child(even) .timeline-dot {
+    left: -38px;
+}
+
+.timeline-content h3 {
+    margin: 0 0 5px 0;
+    color: var(--primary-color);
+}
+
+.timeline-content h4 {
+    margin: 0 0 5px 0;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.timeline-description p {
+    margin-top: 0;  
+    margin-bottom: 0;
+}
+
+/* Timeline Content Arrows */
+.timeline-item:nth-child(odd) .timeline-content::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    right: -10px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+    transform: translateY(-50%);
+}
+
+.timeline-item:nth-child(even) .timeline-content::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: -10px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    transform: translateY(-50%);
+}
+
+/* Timeline Description */
+.timeline-description {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.0s ease-out, padding 0.0s ease-out;
+    padding: 0 0px;
+    opacity: 0;
+}
+
+.timeline-content.expanded .timeline-description {
+    max-height: none;
+    padding: 0px 0px 0;
+    opacity: 1;
+    transition: max-height 0.5s ease-in, padding 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+/* Skills Section */
+.skills-section {
+    height: auto;
+    position: static;
+}
+
+/* Skills List */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skill-item {
+    padding: 5px 15px;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-item:hover {
+    background-color: var(--secondary-color);
+}
+
+.skill-item.active {
+    background-color: var(--secondary-color);
+}
+
+/* Projects Display Section */
+.projects-display {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects-title {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.projects-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.projects-list li {
+    padding: 8px 0;
+    color: var(--text-color);
+    position: relative;
+    padding-left: 20px;
+}
+
+.projects-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1000px) {    
+    .education-brief-container {
+        order: 1;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .skills-container {
+        order: 2;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .timeline-container {
+        order: 3;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .languages-container {
+        order: 4;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .coding-music-container {
+        order: 5;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-container,
+    .lower-section-wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+    .lower-section-wrapper {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        gap: 40px;
+    }
+
+    .right-side-containers {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        flex: none;
+        order: unset;
+        display: contents; 
+    }
+
+    .education-brief-container,
+    .languages-container,
+    .coding-music-container,
+    .skills-container, 
+    .timeline-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .timeline-container {
+        width: 90%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .languages-container li::before {
+        display: none;
+    }
+
+    .languages-container li {
+        padding-left: 0;
+    }
+
+    /* Timeline Mobile Adjustments */
+    .timeline::before {
+        left: 31px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0%;
+    }
+
+    .timeline-content {
+        padding: 15px 20px;
+    }
+
+    .timeline-dot {
+        left: 22px !important;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content::after,
+    .timeline-item:nth-child(even) .timeline-content::after {
+        display: none;
+    }
+}

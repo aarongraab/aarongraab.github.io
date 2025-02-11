@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaron Graab</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
@@ -35,7 +36,7 @@
                     <h2>Computer Science Biochemist</h2>
                     <p>Innovative - Resourceful - Solution-Oriented</p>
                     <p>I'm a passionate software engineer with a strong foundation in biochemistry and molecular biology, bringing a unique perspective to problem-solving. 
-                        My expertise in full-stack development, combined with a scientific approach for analysis and innovation, allows me to create elegant solutions to complex problems. 
+                        My expertise in full-stack development, combined with a scientific approach to analysis and innovation, allows me to create elegant solutions to complex problems. 
                         With a love for learning and interdisciplinary collaboration, I'm always ready to take on new challenges and push the boundaries of what's possible in tech.
                     </p>
                     <div class="social-icons">
@@ -44,9 +45,6 @@
                         </a>
                         <a href="https://github.com/aarongraab" target="_blank" class="social-icon">
                             <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:aarongraab@hotmail.com" class="social-icon">
-                            <i class="fas fa-envelope"></i>
                         </a>
                     </div>
                 </div>
@@ -57,12 +55,23 @@
             <div class="timeline-container">
                 <h2>What I Have Been Up To?</h2>
                 <div class="timeline">
+                    
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <h3>Personal Unity Game</h3>
                             <h4>Card Stacking Mechanic</h4>
                             <p>December 2024</p>
+                            <div class="timeline-description">
+                                <h4>More Information:</h4>
+                                <p>A personal project focused on developing a unique card stacking mechanic in Unity. Features include:</p>
+                                <ul>
+                                    <li>Dynamic card physics and interactions</li>
+                                    <li>Custom card combinations for easy crafting</li>
+                                    <li>Strategic gameplay card spawning mechanics</li>
+                                    <li>Polished UI/UX design</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -71,47 +80,114 @@
                             <h3>BSc Computer Science</h3>
                             <h4>Memorial University of Newfoundland - St. John's, NL</h4>
                             <p>2020 - 2024</p>
+                            <div class="timeline-description">
+                                <h4>More Information:</h4>
+                                <p>Bachelor of Science in Computer Science with focus on Software Development and Data Management:</p>
+                                <ul>
+                                    <li>GPA: 3.61/4.0</li>
+                                    <li>Key coursework: Data Visulization, Data Structures & Algorithms, Operating Systems, Database Systems, Software Engineering</li>
+                                    <li>Advanced studies: Machine Learning, Mobile App Development, Computer Networking</li>
+                                    <li>Computer Science Society</li>
+                                    <li>2022 and 2023 Hackathon</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="timeline-item">
+                     </div>
+                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <h3>Alien Protocol</h3>
-                            <h4>A fully functional game engine developed with SFML and ImGui</h4>
+                            <h4>Functional game engine developed with SFML and ImGui</h4>
                             <p>2024</p>
+                            <div class="timeline-description">
+                                <h4>More Information:</h4>
+                                <p>Custom-built a 2D game engine developed in C++, showcasing advanced game development techniques and engine architecture:</p>
+                                <ul>
+                                    <li>Implemented core physics systems including collision detection, ray casting, and gravity simulation</li>
+                                    <li>Developed advanced AI with NPC pathfinding and behavior systems</li>
+                                    <li>Created comprehensive gameplay systems including weapons, inventory management, and shop interfaces</li>
+                                    <li>Built a fully functional level editor for dynamic content creation</li>
+                                    <li>Integrated visual enhancements including custom shaders, parallax effects, and fluid animations</li>
+                                    <li>Engineered robust audio systems and UI/UX using ImGui</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="timeline-item">
+                     </div>
+                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <h3>Stock Market Trading Simulation</h3>
                             <h4>Web-based stock market simulation. Real time trading and portfolio management</h4>
                             <p>2024</p>
+                            <div class="timeline-description">
+                                <p>Full-stack web application simulating real-world stock market trading with live data integration:</p>
+                                <ul>
+                                    <li>Built robust backend using Node.js and Express.js with RESTful API architecture</li>
+                                    <li>Utilized MongoDB for efficient data management and EJS for dynamic content rendering</li>
+                                    <li>Integrated real-time NYSE API for live stock data and daily market updates</li>
+                                    <li>Implemented user authentication and session management</li>
+                                    <li>Developed dynamic portfolio tracking with real-time profit/loss calculations</li>
+                                    <li>Created intuitive trading interface with buy/sell actions and market orders</li>
+                                    <li>Added advanced features including transaction history, competitor portfolios, and trading fees</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="timeline-item">
+                     </div>
+                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <h3>Machine Learning Projects</h3>
-                            <h4>Classification, regression, and image recognition using scikit-learn and TensorFlow. Model optimization and data analysis</h4>
+                            <h4>Classification, regression, and image recognition using scikit-learn and TensorFlow</h4>
                             <p>2023</p>
+                            <div class="timeline-description">
+                                <p>Comprehensive portfolio of machine learning projects showcasing various ML techniques and frameworks:</p>
+                                <ul>
+                                    <li>Implemented K-Nearest Neighbors (KNN) algorithm with 10-fold cross-validation for label classification</li>
+                                    <li>Developed and optimized regression models using scikit-learn's extensive ML library</li>
+                                    <li>Enhanced model performance through hyperparameter tuning and grid search optimization</li>
+                                    <li>Created binary classifiers with advanced evaluation metrics and ROC curve analysis</li>
+                                    <li>Built image classification system using TensorFlow and the Fashion MNIST dataset</li>
+                                    <li>Conducted thorough data preprocessing, feature engineering, and model evaluation</li>
+                                    <li>Applied RMSE interpretations and leave-one-out cross-validation techniques</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="timeline-item">
+                     </div>
+                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <h3>Server-Client Interactions</h3>
-                            <h4>
-                                Client-server simulation with data manipulation and queue authentication management</h4>
+                            <h4>Client-server simulation with data manipulation and queue authentication management</h4>
                             <p>2023</p>
+                            <div class="timeline-description">
+                                <h4>More Information:</h4>
+                                <p>Java-based client-server architecture demonstrating network programming and authentication systems:</p>
+                                <ul>
+                                    <li>Developed two distinct server implementations demonstrating different networking concepts:</li>
+                                    <ul>
+                                        <li>UpperServer: String manipulation server with bidirectional communication</li>
+                                        <li>QueueServer: Authenticated queue management system with persistent data</li>
+                                    </ul>
+                                    <li>Implemented secure user authentication with credential validation and attempt limiting</li>
+                                    <li>Created robust command processing system for queue operations (add, remove, print)</li>
+                                    <li>Built concurrent connection handling using Java's socket programming</li>
+                                    <li>Designed clean command-line interface for server and client interactions</li>
+                                    <li>Implemented error handling and graceful disconnection protocols</li>
+                                    <li>Documented comprehensive deployment and usage instructions</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                     </div>
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <h3>Moved to St. John's Newfoundland</h3>
                             <h4>Started BSc in Computer Science</h4>
                             <p>2021</p>
+                            <div class="timeline-description">
+                                <h4>More Information:</h4>
+                                <p>Life transition to learn programming in hopes of merging computer science with biochemistry</p>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -120,6 +196,16 @@
                             <h3>Legislative Assistant</h3>
                             <h4>Legislative Assembly of Ontario - Toronto, ON</h4>
                             <p>2020 - 2021</p>
+                            <div class="timeline-description">
+                                <h4>More Information:</h4>
+                                <p>Lead connection between my represented MPP at Queen's Park, various other government ministries, stakeholders, and constituents to promote different government wide initiatives.</p>
+                                <ul>
+                                    <li>Working directly on multiple Private Member's bills and acted as a liaison between a multitude of Ministries for various inputs and lobbying</li>
+                                    <li>Stakeholder relations</li>
+                                    <li>Preparing scripts, speeches, member's statements, press releases, and quotes for Members</li>
+                                    <li>Streamlining organizational protocols, documentation, and social networks for enhanced efficiency</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -128,6 +214,17 @@
                             <h3>Fermentation Manufacturing Technician</h3>
                             <h4>Noblegen - Peterborough, ON</h4>
                             <p>2019 - 2020</p>
+                            <div class="timeline-description">
+                                <h4>More Information:</h4>
+                                <p>Maintaining a stable environment for algae to thrive which includes feeding, daily sampling, and documenting laboratory analytics of the algae's genetic profile for the purposes of harvesting into protein powder when optimal. Centrifugal, homogenizing, and bioanalyzing of biomass materials and contaminant foreign bodies.</p>
+                                <ul>
+                                    <li>Aid in new algae growth media trials for the purpose of cost reduction</li>
+                                    <li>Mapped and labelled all valves; pneumatic, butterfly, and diaphragm, for efficient identification and training of future employees</li>
+                                    <li>Modified a PNID chart for Engineers to understand plant schematics quickly</li>
+                                    <li>Initiated the switch to biodegradable sanitation equipment, saving thousands of dollars</li>
+                                    <li>Lead for new recycling program</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -136,6 +233,25 @@
                             <h3>BSc Biochemistry and Molecular Biology</h3>
                             <h4>Trent University - Peterborough, ON</h4>
                             <p>2014 - 2019</p>
+                            <div class="timeline-description">
+                                <h4>More Information:</h4>
+                                <p>Bachelor of Science in Biochemistry and Molecular Biology with a focus on analytics and experimental techniques</p>
+                                <ul>
+                                    <li>Honours Program</li>
+                                    <li>Scott Rennie Memorial Otonabee College School Spirit Award</li>
+                                    <li>Grant Stel Trophy Award</li>
+                                    <li>Extracurricular Activities:
+                                        <ul>
+                                            <li>Otonabee College - President</li>
+                                            <li>Otonabee College - Treasurer</li>
+                                            <li>Orientation Week Leader</li>
+                                            <li>Resident Advisor (Don)</li>
+                                            <li>Trent Undergrad Biology Society - President</li>
+                                            <li>Student Resident Representative - Vice President</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>                            
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -144,6 +260,10 @@
                             <h3>Pierre Elliott Trudeau High School</h3>
                             <h4>Honours in French Immersion</h4>
                             <p>2010 - 2014</p>
+                            <div class="timeline-description">
+                                <h4>More Information:</h4>
+                                <p>High School</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -166,100 +286,30 @@
     
                 <div class="skills-container">
                     <div class="skills-section">
-                        <h2>Skills & Expertise</h2>
-
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Python</span>
-                                <span class="skill-percentage">90%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 90%"></div>
-                            </div>
+                        <h2 style="text-align: center;">Skills & Expertise</h2>
+                        <div class="skills-list">
+                            <span class="skill-item" data-skill="Python">Python</span>
+                            <span class="skill-item" data-skill="HTML">HTML</span>
+                            <span class="skill-item" data-skill="CSS">CSS</span>
+                            <span class="skill-item" data-skill="JavaScript">JavaScript</span>
+                            <span class="skill-item" data-skill="Node.js">Node.js</span>
+                            <span class="skill-item" data-skill="Express.js">Express.js</span>
+                            <span class="skill-item" data-skill="three.js">three.js</span>
+                            <span class="skill-item" data-skill="React">React</span>
+                            <span class="skill-item" data-skill="SQL">SQL</span>
+                            <span class="skill-item" data-skill="C++">C++</span>
+                            <span class="skill-item" data-skill="C#">C#</span>
+                            <span class="skill-item" data-skill="Java">Java</span>
+                            <span class="skill-item" data-skill="Flutter">Flutter</span>
+                            <span class="skill-item" data-skill="Dart">Dart</span>
                         </div>
-
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">JavaScript</span>
-                                <span class="skill-percentage">85%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Node.js</span>
-                                <span class="skill-percentage">75%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">CSS</span>
-                                <span class="skill-percentage">75%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">React</span>
-                                <span class="skill-percentage">75%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">HTML</span>
-                                <span class="skill-percentage">75%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">SQL</span>
-                                <span class="skill-percentage">75%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">AWS</span>
-                                <span class="skill-percentage">70%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 70%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">C++</span>
-                                <span class="skill-percentage">70%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 70%"></div>
-                            </div>
+                        <div class="projects-display" style="display: none;">
+                            <h3 class="projects-title"></h3>
+                            <ul class="projects-list"></ul>
                         </div>
                     </div>
-                </div>
-    
+                </div>                
+
                 <div class="languages-container">
                     <h2>Languages</h2>
                     <ul>
@@ -286,7 +336,7 @@
     </main>
     
     <footer>
-        <p>&copy; 2025 Aaron Graab. All rights reserved.</p>
+        <p>&copy; 2024 Aaron Graab. All rights reserved.</p>
     </footer>
     <script type="module">
         import Main from './main.js';

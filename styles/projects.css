@@ -1,0 +1,153 @@
+/* Projects Page Container */
+.projects-container {
+    max-width: 1200px;
+    margin: 80px auto 40px;
+    padding: 20px;
+}
+
+.projects-container h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Project Grid Layout */
+.project-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Project Cards */
+.project-card {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    padding: 20px 20px 10px;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.project-card p {
+    padding: 0 20px 20px;
+    margin: 0;
+}
+
+/* Project Images and Slider */
+.project-images {
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+.image-slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 1000px;
+    max-height: 700px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    flex-shrink: 0;
+}
+
+/* Specific Image Styles */
+.slider-image.zoom-out {
+    height: auto;
+    max-height: 100%;
+    object-fit: scale-down;
+}
+
+.slider-image.alien {
+    height: auto;
+    max-height: 100%;
+}
+
+.slider-image.ml {
+    height: auto;
+    max-height: 100%;
+}
+
+/* Slider Navigation Buttons */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Slider Dots Navigation */
+.slider-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background: white;
+}
+
+/* Responsive Design for Projects Page */
+@media screen and (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-images {
+        height: 400px;
+    }
+}

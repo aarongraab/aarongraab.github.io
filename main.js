@@ -1,7 +1,8 @@
 const projectsBySkill = {
     "Python": [
-        "Data Visulization Graphs using pandas and matplotlib",
-        "Machine Learning Projects using pandas",
+        "Food App (in progress - NDA) - torch, torchvision, pillow, uvicorn, pydanitic",
+        "Data Visulization Graphs - pandas, matplotlib, and seaborn",
+        "Machine Learning Projects - pandas",
         "BlackJack Game"
     ],
     "HTML": [
@@ -42,9 +43,13 @@ const projectsBySkill = {
         "Server-Client Project"
     ],
     "Flutter": [
+        "Dear Diary App",
+        "Buenos Aires Travel Itinerary App",
         "Final App Project (in progress)"
     ],
     "Dart": [
+        "Dear Diary App",
+        "Buenos Aires Travel Itinerary App",
         "Final App Project (in progress)"
     ]
 };
